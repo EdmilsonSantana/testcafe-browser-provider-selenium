@@ -45,6 +45,8 @@ export default {
         version = version ? version[1] : undefined; // eslint-disable-line no-undefined
         platform = platform ? platform[1] : undefined; // eslint-disable-line no-undefined
 
+        console.log(pageUrl);
+        
         const builder = new Builder().forBrowser(browserFormalName, version, platform).usingServer(this.seleniumServer);
         const optionSetter = optionSetterMaps[browserFormalName];
 
@@ -146,6 +148,6 @@ export default {
     },
 
     async isLocalBrowser () {
-        return true;
+        return false;
     }
 };
