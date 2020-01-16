@@ -146,6 +146,6 @@ export default {
     },
 
     async isLocalBrowser () {
-        return false;
+        return true;
     }
 };
